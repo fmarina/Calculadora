@@ -1,0 +1,146 @@
+.calculadora{
+    width: 20%;
+    height: 80%;
+    min-width: 300px;
+    min-height: 500px;
+    border-radius: 3%;
+    background-color: #000;
+    color: #fff;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.flexbox-base{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 1.1em;
+}
+
+.visor{
+    height: 115px;
+    display: flex;
+    flex-direction: column;    
+    justify-content: flex-end;
+    align-items: flex-end;    
+    margin: 5%;
+    color: #fff;  
+    overflow-wrap: break-word;
+}
+
+.visor__input{    
+    max-width: 270px;
+    max-height: 115px;
+    font-size: 2.5em;
+}
+
+.boton{
+    margin: 5px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border-style: none;
+    font-size: 1em;    
+}
+    
+.botones__contenedor{
+    width: 75%;    
+}
+.operadores--especiales .boton{
+    background-color: #A4A4A4;
+}
+.operadores--numeros{    
+    flex-direction: row-reverse;    
+}
+.operadores--numeros .boton{    
+    background-color: #333333;
+    color: #fff;
+}
+    
+.operadores--basicos{
+    width: 25%;
+    flex-direction: column;
+}
+    
+.operadores--basicos .boton{    
+    color: #fff;
+    background-color:  #E79E38;
+}
+    
+.doble{
+    width: 140px;
+    border-radius: 50px;
+    text-align: left;
+    padding-left: 10%;
+}    
+
+/*
+.calculadora{
+    width: 300px;
+    height: 500px;  
+    background-color: #000;
+    border-radius: 10px;
+    color: #fff;     
+    font-family: Arial;     
+    box-sizing: border-box;
+}
+
+.flexbox-base{
+    display: flex;   
+    flex-wrap: wrap; 
+    justify-content: center;
+    font-size: 1.1em;   
+}
+
+.visor{
+    height: 120px;
+    margin: 10px 30px;
+    display: flex;
+    flex-direction: column;    
+    justify-content: flex-end;
+    align-items: flex-end;    
+}
+.visor__input{
+    font-size: 2.5em;
+}
+
+.boton{
+    margin: 5px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border-style: none;
+    font-size: 1em;    
+}
+
+.botones__contenedor{
+    width: 75%;    
+}
+.operadores--especiales .boton{
+    background-color: #A4A4A4;
+}
+.operadores--numeros{    
+    flex-direction: row-reverse;    
+}
+.operadores--numeros .boton{    
+    background-color: #333333;
+    color: #fff;
+}
+
+.operadores--basicos{
+    width: 25%;
+    flex-direction: column;
+}
+
+.operadores--basicos .boton{    
+    color: #fff;
+    background-color:  #E79E38;
+}
+
+.doble{
+    width: 130px;
+    border-radius: 50px;
+    text-align: left;
+    padding-left: 10%;
+}
+*/

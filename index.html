@@ -1,0 +1,44 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body class="flexbox-base">
+  <div class="calculadora">
+    <div class="visor">
+      <div class="visor__input" id="display">0</div>
+    </div>
+    <div class="botones flexbox-base">
+      <div class="flexbox-base botones__contenedor">
+        <div class="flexbox-base operadores--especiales"> 
+          <button class="boton" onclick="limpiarDisplay()">C</button>
+          <button class="boton" onclick="realizarOperacion('+/-')">+/-</button>  
+          <button class="boton" onclick="realizarOperacion('%')">%</button>
+        </div>
+        <div class="flexbox-base operadores--numeros">
+          <button class="boton" onclick="presionarNumero(9)">9</button>
+          <button class="boton" onclick="presionarNumero(8)">8</button>
+          <button class="boton" onclick="presionarNumero(7)">7</button>
+          <button class="boton" onclick="presionarNumero(6)">6</button>
+          <button class="boton" onclick="presionarNumero(5)">5</button>
+          <button class="boton" onclick="presionarNumero(4)">4</button>
+          <button class="boton" onclick="presionarNumero(3)">3</button>
+          <button class="boton" onclick="presionarNumero(2)">2</button>
+          <button class="boton" onclick="presionarNumero(1)">1</button>
+          <button class="boton" onclick="presionarNumero('.')">,</button>
+          <button class="boton doble" onclick="presionarNumero(0)">0</button>
+        </div>
+      </div>
+      <div class="flexbox-base operadores--basicos">
+          <button class="boton" onclick="realizarOperacion('/')">/</button>
+          <button class="boton" onclick="realizarOperacion('*')">X</button>
+          <button class="boton" onclick="realizarOperacion('-')">-</button>
+          <button class="boton" onclick="realizarOperacion('+')">+</button>
+          <button class="boton" onclick="resultadoIgual()">=</button>
+      </div>
+    </div>
+  </div>  
+  <script src="main.js"></script>
+</body>
+</html>
